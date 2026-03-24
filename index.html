@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Política de Privacidade — SIGAV</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a2540;
+    --blue: #1a3a6b;
+    --mid: #2e7fc1;
+    --green: #3aab6a;
+    --bg: #f4f7fb;
+    --white: #ffffff;
+    --text: #1a2d45;
+    --sub: #4a6080;
+    --border: #d0dcea;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+  }
+
+  header {
+    background: linear-gradient(135deg, var(--navy) 0%, var(--blue) 100%);
+    padding: 48px 24px 40px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  header::before {
+    content: '';
+    position: absolute;
+    width: 400px; height: 400px;
+    border-radius: 50%;
+    background: rgba(46,127,193,.15);
+    top: -150px; right: -100px;
+  }
+
+  header::after {
+    content: '';
+    position: absolute;
+    width: 250px; height: 250px;
+    border-radius: 50%;
+    background: rgba(58,171,106,.1);
+    bottom: -80px; left: -60px;
+  }
+
+  .header-inner { position: relative; z-index: 1; max-width: 680px; margin: 0 auto; }
+
+  .logo-mark {
+    display: inline-flex; align-items: center; gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .logo-dot {
+    width: 10px; height: 10px; border-radius: 50%;
+    background: var(--green);
+  }
+
+  .logo-name {
+    font-family: 'DM Serif Display', serif;
+    font-size: 22px; color: rgba(255,255,255,.9);
+    letter-spacing: 4px;
+  }
+
+  header h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: clamp(26px, 5vw, 36px);
+    color: #ffffff;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 13px;
+    color: rgba(255,255,255,.55);
+    letter-spacing: 1px;
+  }
+
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 80px;
+  }
+
+  .intro-card {
+    background: var(--white);
+    border-radius: 16px;
+    padding: 28px 32px;
+    border-left: 4px solid var(--green);
+    box-shadow: 0 2px 20px rgba(26,58,107,.07);
+    margin-bottom: 40px;
+    font-size: 15px;
+    color: var(--sub);
+  }
+
+  .intro-card strong { color: var(--text); }
+
+  section {
+    margin-bottom: 36px;
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--border);
+  }
+
+  .section-num {
+    width: 32px; height: 32px;
+    border-radius: 8px;
+    background: var(--blue);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    display: flex; align-items: center; justify-content: center;
+    flex-shrink: 0;
+  }
+
+  h2 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: var(--navy);
+  }
+
+  p { font-size: 15px; color: var(--sub); margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    margin: 12px 0;
+  }
+
+  ul li {
+    font-size: 15px;
+    color: var(--sub);
+    padding: 8px 0 8px 24px;
+    position: relative;
+    border-bottom: 1px solid var(--border);
+  }
+
+  ul li:last-child { border-bottom: none; }
+
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 16px;
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: var(--mid);
+    opacity: .6;
+  }
+
+  .highlight-box {
+    background: #f0fdf6;
+    border: 1px solid rgba(58,171,106,.25);
+    border-radius: 12px;
+    padding: 18px 22px;
+    margin: 16px 0;
+    font-size: 14px;
+    color: #2a6644;
+  }
+
+  .contact-card {
+    background: linear-gradient(135deg, var(--navy), var(--blue));
+    border-radius: 16px;
+    padding: 28px 32px;
+    color: rgba(255,255,255,.85);
+    font-size: 14px;
+    margin-top: 40px;
+  }
+
+  .contact-card h3 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+
+  .contact-card a {
+    color: #7dd4a8;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  footer {
+    text-align: center;
+    padding: 24px;
+    font-size: 12px;
+    color: var(--sub);
+    border-top: 1px solid var(--border);
+  }
+
+  @media (max-width: 600px) {
+    main { padding: 32px 16px 60px; }
+    .intro-card { padding: 20px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <div class="logo-mark">
+      <div class="logo-dot"></div>
+      <span class="logo-name">SIGAV</span>
+      <div class="logo-dot"></div>
+    </div>
+    <h1>Política de Privacidade</h1>
+    <p>Última atualização: Março de 2026</p>
+  </div>
+</header>
+
+<main>
+
+  <div class="intro-card">
+    O <strong>SIGAV</strong> (Sistema de Gestão de Atendimento e Veículos) é um aplicativo desenvolvido e de propriedade da <strong>Mesan Prime</strong>, cedido para uso pela Secretaria de Agricultura e Meio Ambiente do Município de Querência — MT. Esta política descreve como coletamos, usamos e protegemos as informações dos usuários.
+  </div>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">1</div>
+      <h2>Quem Somos</h2>
+    </div>
+    <p>O SIGAV é desenvolvido e de propriedade da <strong>Mesan Prime</strong>, sendo licenciado para uso pela Secretaria de Agricultura e Meio Ambiente de Querência — MT. O aplicativo destina-se exclusivamente a servidores públicos municipais autorizados e não está disponível ao público geral.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">2</div>
+      <h2>Dados Coletados</h2>
+    </div>
+    <p>O aplicativo coleta as seguintes informações:</p>
+    <ul>
+      <li><strong>Dados de identificação do servidor:</strong> matrícula e nome funcional, utilizados exclusivamente para autenticação e registro de atividades.</li>
+      <li><strong>Dados de uso de veículos:</strong> quilometragem, horário de saída e retorno, serviço realizado e local de destino.</li>
+      <li><strong>Dados de atendimentos ao cidadão:</strong> nome, CPF, data de nascimento, telefone e informações sobre o atendimento prestado.</li>
+      <li><strong>Dados de abastecimento:</strong> quantidade de litros, posto e quilometragem no momento do abastecimento.</li>
+    </ul>
+    <div class="highlight-box">
+      ✅ O SIGAV <strong>não coleta</strong> dados de localização do dispositivo, não acessa câmera ou microfone, e não rastreia a navegação do usuário fora do aplicativo.
+    </div>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">3</div>
+      <h2>Finalidade do Uso dos Dados</h2>
+    </div>
+    <p>Os dados coletados são utilizados exclusivamente para:</p>
+    <ul>
+      <li>Controle administrativo da frota de veículos da Secretaria</li>
+      <li>Registro e acompanhamento de atendimentos prestados à população</li>
+      <li>Geração de relatórios internos de gestão e prestação de contas</li>
+      <li>Alimentação do painel de indicadores (Power BI) da Secretaria</li>
+    </ul>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">4</div>
+      <h2>Armazenamento e Segurança</h2>
+    </div>
+    <p>Os dados são armazenados em planilhas do Google Sheets vinculadas à conta institucional da Secretaria de Agricultura e Meio Ambiente de Querência — MT, com acesso restrito a usuários autorizados. O acesso ao sistema é protegido por autenticação individual com matrícula e senha. A Mesan Prime não retém cópias dos dados coletados pela Secretaria.</p>
+    <p>Os dados armazenados localmente no dispositivo (modo offline) são utilizados exclusivamente para sincronização com o servidor e são removidos após o envio bem-sucedido.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">5</div>
+      <h2>Compartilhamento de Dados</h2>
+    </div>
+    <p>Os dados coletados pelo SIGAV <strong>não são compartilhados com terceiros</strong> para fins comerciais. O acesso às informações é restrito aos servidores autorizados da Secretaria de Agricultura e Meio Ambiente de Querência — MT.</p>
+    <p>Dados podem ser compartilhados com outras secretarias ou órgãos municipais exclusivamente para fins administrativos e de fiscalização, conforme previsto na legislação municipal vigente.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">6</div>
+      <h2>Retenção dos Dados</h2>
+    </div>
+    <p>Os dados são mantidos enquanto necessários para fins administrativos e de prestação de contas. O descarte segue as normas de gestão documental aplicáveis ao serviço público municipal.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">7</div>
+      <h2>Direitos dos Titulares</h2>
+    </div>
+    <p>Em conformidade com a Lei Geral de Proteção de Dados (LGPD — Lei nº 13.709/2018), os titulares dos dados têm direito a:</p>
+    <ul>
+      <li>Confirmação da existência de tratamento de seus dados</li>
+      <li>Acesso aos dados coletados</li>
+      <li>Correção de dados incompletos ou desatualizados</li>
+      <li>Informação sobre o uso compartilhado dos dados</li>
+    </ul>
+    <p>Solicitações podem ser feitas pelo e-mail de contato indicado abaixo.</p>
+  </section>
+
+  <section>
+    <div class="section-header">
+      <div class="section-num">8</div>
+      <h2>Alterações nesta Política</h2>
+    </div>
+    <p>Esta política pode ser atualizada periodicamente. Alterações significativas serão comunicadas aos usuários através do próprio aplicativo. O uso continuado do SIGAV após qualquer alteração implica na aceitação da nova versão.</p>
+  </section>
+
+  <div class="contact-card">
+    <h3>Fale Conosco</h3>
+    <p>Dúvidas sobre esta política de privacidade ou sobre o tratamento dos seus dados:</p>
+    <p style="margin-top:10px">📧 <a href="/cdn-cgi/l/email-protection#b7dad2c4d6d999c7c5dedad2f7d0dad6dedb99d4d8da"><span class="__cf_email__" data-cfemail="5f323a2c3e31712f2d36323a1f38323e3633713c3032">[email&#160;protected]</span></a></p>
+    <p style="margin-top:6px; font-size:13px; opacity:.7">Secretaria de Agricultura e Meio Ambiente — Querência, Mato Grosso</p>
+  </div>
+
+</main>
+
+<footer>
+ 
